@@ -112,7 +112,7 @@ header {
 }
 
 .chicken-image img {
-    max-width: 700px; /* Make logo responsive */
-    height: 700px; /* Maintain aspect ratio */
+    max-width: 80%; /* Make logo responsive */
+    height: 90%; /* Maintain aspect ratio */
 }
 
