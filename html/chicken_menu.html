@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustasa</title>
+    <link rel="stylesheet" href="../css/chicken_menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../pictures/logo.png" alt="Mustasa Logo">
+            <a href="#">MENU</a>
+        </div>
+        <div class="cart">
+            <img src="../pictures/shopping-cart.png" alt="Cart">
+        </div>
+    </header>
+
+    <div class="tabs">
+        <button class="tab" onclick="showCategory('chicken')">Chicken</button>
+        <button class="tab active" onclick="showCategory('lumpia')">Lumpia</button>
+        <button class="tab" onclick="showCategory('drinks')">Drinks</button>
+    </div>
+
+    <div class="menu-content">
+        <h1>Menu</h1>
+        
+        <div class="menu-layout">
+            <div class="available-section">
+                <h2>Available</h2>
+                <p>Fried Chicken</p>
+                <p>Chicken Neck</p>
+                <p>Chicken Wing</p>
+                <p>Sweet Sauce</p>
+                <p>Chili Garlic Oil</p>
+            </div>
+
+            <div class="menu-category">
+                <h2>Chicken</h2>
+                <hr>
+                <div class="menu-item">
+                    <div class="item-image-container">
+                        <img src="../pictures/fried chicken.png" alt="fried chicken">
+                        <img src="../pictures/chicken neck.png" alt="chicken neck">
+                        <img src="../pictures/chicken wings.png" alt="chicken wings">
+                        <img src="../pictures/chicken neck.png" alt="chicken neck">
+                        <img src="../pictures/sweet sauce.png" alt="sweet sauce">
+                        <img src="../pictures/chili garlic oil.png" alt="chili garlic oil">
+                    </div>
+                    <p>Chicken</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/chicken_menu.js"></script>
+</body>
+</html>
