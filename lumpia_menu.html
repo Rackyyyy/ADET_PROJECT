@@ -7,37 +7,41 @@
     <link rel="stylesheet" href="lumpia_menu_styles.css">
 </head>
 <body>
+
     <header>
         <div class="logo-container">
             <img src="picture/logo.png" alt="Mustasa Logo">
             <a href="#">MENU</a>
         </div>
+        <div class="cart">
+            <img src="picture/shopping-cart.png" alt="Cart">
+        </div>
     </header>
-    <div class="cart">
-        <img src="picture/shopping-cart.png" alt="Cart">
+
+    <div class="tabs">
+        <button class="tab" onclick="showCategory('chicken')">Chicken</button>
+        <button class="tab active" onclick="showCategory('lumpia')">Lumpia</button>
+        <button class="tab" onclick="showCategory('drinks')">Drinks</button>
     </div>
-</header>
 
-<div class="tabs">
-    <button class="tab" onclick="showCategory('chicken')">Chicken</button>
-    <button class="tab active" onclick="showCategory('lumpia')">Lumpia</button>
-    <button class="tab" onclick="showCategory('drinks')">Drinks</button>
-</div>
-
-<div class="menu-content" id="menu-content">
-    <h1>Menu</h1>
-    <div class="menu-category">
-        <h2>Lumpia</h2>
-        <hr>
-        <div class="menu-item">
-            <img src="picture/lumpia.png" alt="Lumpiang Shanghai">
+    <div class="menu-content" id="menu-content">
+        <h1>Menu</h1>
+        
+        <div class="available-section">
+            <h2>Available</h2>
             <p>Lumpiang Shanghai</p>
         </div>
+
+        <div class="menu-category">
+            <h2>Lumpia</h2>
+            <hr>
+            <div class="menu-item">
+                <img src="picture/lumpia.png" alt="Lumpiang Shanghai">
+                <p>Lumpiang Shanghai</p>
+            </div>
+        </div>
     </div>
-</div>
 
-<script src="lumpia_menu_script.js"></script>
+    <script src="lumpia_menu_script.js"></script>
 </body>
-</html>
-
 </html>
