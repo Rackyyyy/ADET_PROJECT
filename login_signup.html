@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up</title>
+    <link rel="stylesheet" href="Login_styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Create an Account</h2>
+        <form id="signupForm" action="login_signup.php" method="POST">
+            
+            <input type="text" name="firstName" placeholder="First Name" required>
+            <input type="text" name="lastName" placeholder="Last Name" required>
+            <input type="email" name="signupEmail" id="signupEmail" placeholder="Email Address" required>
+            <input type="password" name="password" placeholder="Password" required>
+
+            <div class="checkbox">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the Terms & Conditions</label>
+            </div>
+
+            <div class="button-group">
+                <button type="submit" class="primary-button">Create Account</button>
+                <button type="button" id="backToLogin" class="secondary-button">Login</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="Login_script.js"></script>
+</body>
+</html>
