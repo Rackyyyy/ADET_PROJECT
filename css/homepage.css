@@ -13,6 +13,34 @@ header {
     background-color: white;
 }
 
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.user-profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.logout-btn {
+    text-decoration: none;
+    color: white;
+    padding: 8px 16px;
+    border: 1px solid #FF6600;
+    border-radius: 40px;
+    background-color: #FF6600;
+}
+
+.cart-icon img {
+    height: 30px;
+    width: 30px;
+    cursor: pointer;
+}
+
 .logo-container {
     display: flex;
     align-items: center;
