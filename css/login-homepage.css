@@ -1,8 +1,8 @@
 body {
-    font-family: Arial, Helvetica, sans-serif;
-    margin: 0;
     font-family: Arial, sans-serif;
-    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: white;
 }
 
 header {
@@ -11,23 +11,25 @@ header {
     align-items: center;
     padding: 10px 20px;
     background-color: white;
+    border-bottom: 2px solid #ddd;
 }
 
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo-container img {
     height: 50px;
-    width: auto; 
+    width: auto;
 }
 
 .logo-container a {
+    font-size: 20px;
+    font-weight: bold;
     text-decoration: none;
     color: black;
-    font-weight: bold;
 }
 
 .login-btn {

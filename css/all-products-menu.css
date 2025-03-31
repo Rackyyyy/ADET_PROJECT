@@ -2,11 +2,9 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
-    box-sizing: border-box;
+    background-color: white;
 }
 
-/* Header */
 header {
     display: flex;
     justify-content: space-between;
@@ -19,11 +17,11 @@ header {
 .logo-container {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 10px;
 }
 
 .logo-container img {
-    height: 60px;
+    height: 50px;
     width: auto;
 }
 
@@ -34,12 +32,10 @@ header {
     color: black;
 }
 
-/* Cart Icon */
 .cart img {
     height: 30px;
 }
 
-/* Tabs Navigation */
 .tabs {
     display: flex;
     justify-content: center;
@@ -49,19 +45,17 @@ header {
 }
 
 .tab {
-    padding: 10px 20px;
+    padding: 10px 25px;
     background: none;
     border: none;
     cursor: pointer;
     font-size: 18px;
     font-weight: bold;
     border-bottom: 3px solid transparent;
-    margin: 0 10px;
 }
 
 .tab.active {
     border-bottom: 3px solid #000;
-    font-weight: bold;
 }
 
 /* Menu Content Layout */
