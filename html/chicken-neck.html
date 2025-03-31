@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustasa - Chicken Neck</title>
-    <link rel="stylesheet" href="../css/chicken-neck.css">
+    <link rel="stylesheet" href="../css/menu-details.css">
 </head>
 <body>
 
@@ -18,11 +18,11 @@
         </div>
     </header>
 
-    <nav class="tabs">
-        <a href="#" class="tab active">Chicken</a>
-        <a href="#" class="tab">Lumpia</a>
-        <a href="#" class="tab">Drinks</a>
-    </nav>
+    <div class="tabs">
+        <button class="tab active" onclick="showCategory('chicken')">Chicken</button>
+        <button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+        <button class="tab" onclick="showCategory('drinks')">Drinks</button>
+    </div>
 
     <div class="menu-container">
         <h1 class="menu-title">Menu</h1>
@@ -32,23 +32,21 @@
             <div class="details">
                 <h3>You choose</h3>
                 <h2>Chicken Neck</h2>
-                <p>Crispy, flavorful, and cooked to perfection!
-                    Enjoy the rich taste of Chicken Neck, deep-fried to a golden crunch. A perfect snack or meal companion—order now!
-                </p>
+                <p>Crispy, flavorful, and cooked to perfection!  Enjoy the rich taste of Chicken Neck, deep-fried to a golden crunch. A perfect snack or meal companion—order now!</p>
                 <button class="add-cart">Add to Cart</button>
             </div>
 
             <div class="menu-item">
-                <h2 class="chicken-neck">Chicken and Sauce</h2>
+                <h2 class="menu">Chicken and Sauce</h2>
                 <hr class="divider">
                 <div class="item-display">
                     <div class="image-container">
-                        <img src="../pictures/chicken neck.png" alt="Chicken Neck">
+                        <img src="../pictures/chicken neck.png" alt="Chili Garlic Oil">
                     </div>
                     <div class="order-section">
                         <button class="order-btn">Order Now</button>
                         <div class="price-section">
-                            <span class="price">₱25</span>
+                            <span class="price">₱5</span>
                             <div class="quantity-controls">
                                 <button class="qty-btn">−</button>
                                 <span>1</span>
@@ -60,6 +58,6 @@
             </div>
         </div>
     </div>
-
+    <script src="../js/menu.js"></script>
 </body>
 </html>
