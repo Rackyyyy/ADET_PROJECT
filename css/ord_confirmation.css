@@ -1,0 +1,93 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-container a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* User Profile */
+.user-profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Order Confirmation */
+.container {
+    width: 60%;
+    margin: 30px auto;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.thank-you {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+hr {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.order-box {
+    background-color: #fdd835;
+    padding: 20px;
+    border-radius: 12px;
+    font-size: 30px;
+    font-weight: bold;
+    color: #000;
+    margin: 30px 0;
+}
+
+.order-button {
+    background-color: #fdd835;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.order-button:hover {
+    background-color: #fbc02d;
+}
