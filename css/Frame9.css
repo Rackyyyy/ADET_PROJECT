@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 20px;
+}
+
+.thank-you {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.divider {
+    border-top: 1px solid black;
+    width: 100%;
+    margin: 10px 0;
+}
+
+.message-box {
+    background-color: #ffcc00;
+    padding: 30px;
+    border-radius: 20px;
+    display: inline-block;
+    width: 60%;
+}
+
+.message-box p {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+.message-box p strong {
+    text-decoration: underline;
+}
+
+.order-button {
+    margin-top: 10px;
+    display: inline-block;
+    background-color: #ffcc00;
+    color: black;
+    padding: 10px 20px;
+    border-radius: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    border: none;
+    cursor: pointer;
+}
+
+.order-button:hover {
+    background-color: #e6b800;
+}
