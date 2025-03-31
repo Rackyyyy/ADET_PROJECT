@@ -6,78 +6,91 @@ body {
     text-align: center;
 }
 
-/* Header */
 header {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
-    padding: 10px 20px;
+    padding: 15px 20px;
     border-bottom: 1px solid #ccc;
+    background-image: url('logo.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
 }
 
 .logo img {
-    width: 40px;
-    height: 40px;
+    width: 50px;
+    height: auto;
 }
 
 nav {
-    margin-left: 10px;
+    margin-left: 15px;
 }
 
 nav a {
     text-decoration: none;
     color: black;
     font-weight: bold;
+    font-size: 18px;
 }
 
-/* Breadcrumb */
+.breadcrumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
 .breadcrumb {
     font-size: 14px;
-    color: gray;
-    margin: 10px 20px;
+    color: black;
     text-align: left;
-}
-
-/* Order Confirmation Section */
-.order-container {
-    margin-top: 20px;
-}
-
-.message h2 {
-    font-size: 20px;
-    font-weight: bold;
-}
-
-hr {
-    width: 80%;
-    margin: 10px auto;
-    border: none;
-    border-top: 1px solid #ccc;
-}
-
-/* Confirmation Box */
-.confirmation-box {
-    background-color: #FFCC33;
-    padding: 30px;
-    border-radius: 25px;
-    margin: 20px auto;
-    max-width: 500px;
-}
-
-.confirmation-box p {
-    font-size: 18px;
-    font-weight: bold;
-    color: #444;
     margin: 0;
 }
 
-/* Button */
+.message h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+hr {
+    width: 100%;
+    margin: 10px 0;
+    border: none;
+    border-top: 2px solid #ccc;
+}
+
+.confirmation-box {
+    background-color: #FFCC33;
+    padding: 40px;
+    border-radius: 30px;
+    margin: 30px auto;
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
 .order-code-btn {
     background-color: #FFCC33;
     border: none;
-    padding: 10px 20px;
-    font-size: 14px;
+    padding: 12px 25px;
+    font-size: 18px;
     font-weight: bold;
-    border-radius: 20px;
+    border-radius: 30px;
     cursor: pointer;
-    margin-top: 10px;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
