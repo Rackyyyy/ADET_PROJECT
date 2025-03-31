@@ -44,17 +44,20 @@ header {
     border-bottom: 2px solid #ccc;
 }
 
-.tabs a {
-    padding: 10px 25px;
-    text-decoration: none;
+.tab {
+    padding: 10px 20px;
+    background: none;
+    border: none;
+    cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    color: black;
     border-bottom: 3px solid transparent;
+    margin: 0 10px;
 }
 
-.tabs a.active {
-    border-bottom: 3px solid black;
+.tab.active {
+    border-bottom: 3px solid #000;
+    font-weight: bold;
 }
 
 .menu-container {
@@ -87,7 +90,8 @@ header {
 
 .details h3 {
     font-size: 18px;
-    font-weight: bold;
+    font-weight: normal;
+    margin-bottom: 5px;
 }
 
 .details h2 {
@@ -103,7 +107,7 @@ header {
 }
 
 .add-cart {
-    padding: 10px 15px;
+    padding: 10px 20px;
     background: black;
     color: white;
     border: none;
@@ -114,16 +118,15 @@ header {
 }
 
 .menu-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: 55%;
+    flex: 1;
+    max-width: 500px;
 }
 
 .chicken-neck {
     font-size: 24px;
     font-weight: bold;
-    align-self: flex-start;
+    text-align: left;
+    margin-bottom: 10px;
 }
 
 .divider {
@@ -134,24 +137,24 @@ header {
 
 .item-display {
     display: flex;
-    width: 100%;
     justify-content: space-between;
     align-items: center;
 }
 
 .image-container {
-    width: 200px;
-    height: 200px;
+    width: 170px;
+    height: 170px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
+    background-color: #FFCC33; /* Yellow background */
+    border-radius: 5px;
 }
 
 .image-container img {
-    width: 200px;
-    height: auto;
-    border-radius: 5px;
+    max-width: 90%;
+    max-height: 90%;
+    object-fit: contain;
 }
 
 .order-section {
@@ -186,20 +189,23 @@ header {
 .quantity-controls {
     display: flex;
     align-items: center;
-    border: 2px solid black;
-    border-radius: 15px;
-    padding: 5px 10px;
-    gap: 10px;
+    border: 1px solid black;
+    border-radius: 25px;
+    padding: 3px 8px;
+    gap: 15px;
 }
 
 .qty-btn {
-    width: 25px;
-    height: 25px;
+    width: 20px;
+    height: 20px;
     border: none;
-    background: white;
-    font-size: 16px;
+    background: transparent;
+    font-size: 20px;
     font-weight: bold;
     cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 @media (max-width: 768px) {
