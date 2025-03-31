@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustasa - Chicken Wings</title>
-    <link rel="stylesheet" href="../css/chicken-wings.css">
+    <link rel="stylesheet" href="../css/menu-details.css">
 </head>
 <body>
 
@@ -18,11 +18,11 @@
         </div>
     </header>
 
-    <nav class="tabs">
-        <a href="#" class="tab active">Chicken</a>
-        <a href="#" class="tab">Lumpia</a>
-        <a href="#" class="tab">Drinks</a>
-    </nav>
+    <div class="tabs">
+        <button class="tab active" onclick="showCategory('chicken')">Chicken</button>
+        <button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+        <button class="tab" onclick="showCategory('drinks')">Drinks</button>
+    </div>
 
     <div class="menu-container">
         <h1 class="menu-title">Menu</h1>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="menu-item">
-                <h2 class="chicken-wings">Chicken and Sauce</h2>
+                <h2 class="menu">Chicken and Sauce</h2>
                 <hr class="divider">
                 <div class="item-display">
                     <div class="image-container">

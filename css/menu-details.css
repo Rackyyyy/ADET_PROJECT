@@ -40,21 +40,22 @@ header {
     display: flex;
     justify-content: center;
     background-color: #eee;
-    padding: 12px;
+    padding: 10px;
     border-bottom: 2px solid #ccc;
 }
 
-.tabs a {
+.tab {
     padding: 10px 25px;
-    text-decoration: none;
+    background: none;
+    border: none;
+    cursor: pointer;
     font-size: 18px;
     font-weight: bold;
-    color: black;
     border-bottom: 3px solid transparent;
 }
 
-.tabs a.active {
-    border-bottom: 3px solid black;
+.tab.active {
+    border-bottom: 3px solid #000;
 }
 
 .menu-container {
@@ -120,7 +121,7 @@ header {
     width: 55%;
 }
 
-.chili-garlic-oil {
+.menu{
     font-size: 24px;
     font-weight: bold;
     align-self: flex-start;
@@ -145,7 +146,7 @@ header {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 15px;
+    border-radius: 5px;
 }
 
 .image-container img {
