@@ -1,0 +1,153 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+    box-sizing: border-box;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    border-bottom: 2px solid #ddd;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo-container img {
+    height: 50px;
+    width: auto;
+}
+
+.logo-container a {
+    font-size: 20px;
+    font-weight: bold;
+    text-decoration: none;
+    color: black;
+}
+
+/* User Profile */
+.user-profile img {
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 60%;
+    margin: 30px auto;
+    text-align: left;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Order Status */
+.order-status {
+    font-size: 14px;
+    color: gray;
+    margin-bottom: 10px;
+}
+
+/* Cart Title */
+.cart-title {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+/* Divider */
+.divider {
+    width: 100%;
+    border: 1px solid #ddd;
+    margin: 10px 0;
+}
+
+/* Cart Items */
+.cart-items {
+    min-height: 250px;
+    margin-bottom: 20px;
+}
+
+.empty-cart {
+    color: gray;
+    font-size: 16px;
+    text-align: center;
+    padding: 20px;
+    border: 1px dashed #ccc;
+    border-radius: 5px;
+}
+
+/* Subtotal Section */
+.subtotal {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+/* Price */
+.price {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+/* Checkout Info */
+.checkout-info {
+    font-size: 14px;
+    color: gray;
+    margin-top: 5px;
+}
+
+/* Checkout Button */
+.checkout-btn {
+    width: 25%;
+    padding: 12px;
+    background-color: #6c6c6c;
+    color: white;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    border-radius: 25px;
+    margin-top: 15px;
+    transition: background-color 0.3s;
+}
+
+.checkout-btn-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.checkout-btn:hover {
+    background-color: #4f4f4f;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .cart-container {
+        width: 90%;
+        padding: 15px;
+    }
+
+    .cart-title {
+        font-size: 24px;
+    }
+
+    .checkout-btn {
+        font-size: 14px;
+    }
+}
