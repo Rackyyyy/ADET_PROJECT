@@ -1,51 +1,96 @@
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
     text-align: center;
-    margin: 20px;
 }
 
-.thank-you {
+header {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 15px 20px;
+    border-bottom: 1px solid #ccc;
+    background-image: url('logo.png'); 
+    background-size: cover;
+    background-position: center;
+    height: 80px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 50px;
+    height: auto;
+}
+
+nav {
+    margin-left: 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: black;
     font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 18px;
 }
 
-.divider {
-    border-top: 1px solid black;
+.breadcrumb-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px;
+}
+
+.breadcrumb {
+    font-size: 14px;
+    color: black;
+    text-align: left;
+    margin: 0;
+}
+
+.message h2 {
+    font-size: 30px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 10px 0 0 0;
+    text-align: left;
+}
+
+hr {
     width: 100%;
     margin: 10px 0;
-}
-
-.message-box {
-    background-color: #ffcc00;
-    padding: 30px;
-    border-radius: 20px;
-    display: inline-block;
-    width: 60%;
-}
-
-.message-box p {
-    font-size: 24px;
-    font-weight: bold;
-    color: #333;
-}
-
-.message-box p strong {
-    text-decoration: underline;
-}
-
-.order-button {
-    margin-top: 10px;
-    display: inline-block;
-    background-color: #ffcc00;
-    color: black;
-    padding: 10px 20px;
-    border-radius: 20px;
-    font-weight: bold;
-    text-decoration: none;
     border: none;
-    cursor: pointer;
+    border-top: 2px solid #ccc;
 }
 
-.order-button:hover {
-    background-color: #e6b800;
+.confirmation-box {
+    background-color: #FFCC33;
+    padding: 40px;
+    border-radius: 30px;
+    margin: 30px auto;
+    max-width: 500px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #444;
+    text-align: center;
+}
+
+.order-code-btn {
+    background-color: #FFCC33;
+    border: none;
+    padding: 12px 25px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 30px;
+    cursor: pointer;
+    margin-top: 15px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
