@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mustasa</title>
+    <link rel="stylesheet" href="../css/drinks_menu.css">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="../pictures/logo.png" alt="Mustasa Logo">
+            <a href="#">MENU</a>
+        </div>
+        <div class="cart">
+            <img src="../pictures/shopping-cart.png" alt="Cart">
+        </div>
+    </header>
+
+    <div class="tabs">
+        <button class="tab" onclick="showCategory('chicken')">Chicken</button>
+        <button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+        <button class="tab active" onclick="showCategory('drinks')">Drinks</button>
+    </div>
+
+    <div class="menu-content">
+        <h1>Menu</h1>
+        
+        <div class="menu-layout">
+            <div class="available-section">
+                <h2>Available</h2>
+                <p>Cocacola Can</p>
+                <p>Pepsi Can</p>
+                <p>Royal Can</p>
+                <p>Sprite Can</p>
+                <p>Water Bottle</p>
+            </div>
+
+            <div class="menu-category">
+                <h2>Drinks</h2>
+                <hr>
+                <div class="menu-items">
+                    <div class="menu-item">
+                        <img src="../pictures/coke.png" alt="fried chicken">
+                        <p>Cocacola Can</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../pictures/pepsi.png" alt="chicken neck">
+                        <p>Pepsi Can</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../pictures/royal.png" alt="chicken wings">
+                        <p>Royal Can</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../pictures/sprite.png" alt="sweet sauce">
+                        <p>Sprite Can</p>
+                    </div>
+                    <div class="menu-item">
+                        <img src="../pictures/water.png" alt="chili garlic oil">
+                        <p>Water Bottle</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/menu.js"></script>
+</body>
+</html>
