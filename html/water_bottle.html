@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mustasa - Drinks</title>
-    <link rel="stylesheet" href="../css/pepsi_can.css">
+    <link rel="stylesheet" href="../css/menu-details.css">
 </head>
 <body>
 
@@ -18,11 +18,11 @@
         </div>
     </header>
 
-    <nav class="tabs">
-        <a href="#" class="tab">Chicken</a>
-        <a href="#" class="tab">Lumpia</a>
-        <a href="#" class="tab active">Drinks</a>
-    </nav>
+    <div class="tabs">
+        <button class="tab" onclick="showCategory('chicken')">Chicken</button>
+        <button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+        <button class="tab active" onclick="showCategory('drinks')">Drinks</button>
+    </div>
 
     <div class="menu-container">
         <h1 class="menu-title">Menu</h1>
@@ -39,7 +39,7 @@
             </div>
 
             <div class="menu-item">
-                <h2 class="drink-menu">Drinks</h2>
+                <h2 class="menu">Drinks</h2>
                 <hr class="divider">
                 <div class="item-display">
                     <div class="image-container">
@@ -60,6 +60,6 @@
             </div>
         </div>
     </div>
-
+    <script src="../js/menu.js"></script>
 </body>
 </html>
