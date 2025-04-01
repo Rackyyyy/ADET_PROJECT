@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create an Account</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 380px;
+            background-color: #ffcc33;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px black(0, 0, 0, 0.2);
+            text-align: center;
+        }
+        h1 {
+            color: black;
+            font-size: 22px;
+        }
+        p {
+            font-size: 14px;
+            color: black;
+        }
+        a {
+            color: black;
+            text-decoration: none;
+        }
+        .section-title {
+            text-align: left;
+            font-weight: bold;
+            margin: 15px 0 5px;
+            font-size: 16px;
+        }
+        .form-group {
+            text-align: left;
+            margin-bottom: 15px;
+            position: relative;
+        }
+        .form-group input {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 5px;
+            text-align: left;
+            box-sizing: border-box;
+        }
+        .password-container {
+            position: relative;
+        }
+        .password-container input {
+            width: 100%;
+            padding: 10px;
+            padding-right: 40px; /* Space for the eye icon */
+            border: 1px solid black;
+            border-radius: 5px;
+            box-sizing: border-box;
+        }
+        .toggle-password {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            cursor: pointer;
+            font-size: 18px;
+            color: black;
+        }
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            text-align: left;
+            margin-bottom: 10px;
+        }
+        .checkbox-group input {
+            margin-right: 10px;
+        }
+        small {
+            display: block;
+            font-size: 12px;
+            color: black;
+            margin-top: 5px;
+        }
+        .buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 15px;
+        }
+        .btn {
+            width: 48%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .btn-primary {
+            background-color: #ff6600;
+            color: white;
+
+
+        }
+        .btn-secondary {
+            background-color: #ff6600;
+            color: white;
+            
+}
+        
+    </style>
+    <script>
+        function togglePassword() {
+            const passwordField = document.getElementById("password");
+            const toggleIcon = document.getElementById("togglePassword");
+            if (passwordField.type === "password") {
+                passwordField.type = "text";
+                toggleIcon.textContent = "👁️";
+            } else {
+                passwordField.type = "password";
+                toggleIcon.textContent = "👁️‍🗨️";
+            }
+        }
+    </script>
+</head>
+<body>
+    <div class="container">
+        <h1>Create an Account</h1>
+        <p><strong>MUSTASA REWARDS</strong></p>
+        <p><a href="#">Join Mustasa Rewards to earn Points for free Chicken, any way you pay.</a></p>
+        
+        <form>
+            <div class="section-title">Personal Information</div>
+            <div class="form-group">
+                <input type="text" id="first-name" placeholder="First Name" required>
+            </div>
+            <div class="form-group">
+                <input type="text" id="last-name" placeholder="Last Name" required>
+            </div>
+            
+            <div class="section-title">Account Security</div>
+            <div class="form-group">
+                <input type="email" id="email" placeholder="Email Address" required>
+                <small>This will be connected to your username.</small>
+            </div>
+            <div class="form-group password-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <span id="togglePassword" class="toggle-password" onclick="togglePassword()" style="right: 10px;">👁️</span>
+                <small>Create a password that is 8 to 25 characters long and has at least one uppercase and one lowercase letter, one number, and one special character such as an exclamation point or an asterisk.</small>
+                <small>COLLECT MORE POINTS & EARN REWARDS</small>
+                <small>Email is a great way to know about offers and what’s new from Cafetolyo</small>
+            </div>
+            
+            <div class="checkbox-group">
+                <input type="checkbox" id="updates">
+                <label for="updates">Yes, I’d like receive update emails from Cafetolyo</label>
+            </div>
+            
+            <div class="section-title">Terms of Use</div>
+            <div class="checkbox-group">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the Caftolyo Points Terms and the Cafetolyo Card Terms and have read the Cafetolyo Privacy Statement.</label>
+            </div>
+            
+            <div class="buttons">
+                <button type="button" class="btn btn-secondary">Log in</button>
+                <button type="submit" class="btn btn-primary">Create Account</button>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,104 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.container {
+    width: 380px;
+    background-color: #ffcc33;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
+}
+h1 {
+    color: black;
+    font-size: 22px;
+}
+p {
+    font-size: 14px;
+    color: black;
+}
+a {
+    color: black;
+    text-decoration: none;
+}
+.section-title {
+    text-align: left;
+    font-weight: bold;
+    margin: 15px 0 5px;
+    font-size: 16px;
+}
+.form-group {
+    text-align: left;
+    margin-bottom: 15px;
+    position: relative;
+}
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid black;
+    border-radius: 5px;
+    text-align: left;
+    box-sizing: border-box;
+}
+.password-container {
+    position: relative;
+}
+.password-container input {
+    width: 100%;
+    padding: 10px;
+    padding-right: 40px;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+.toggle-password {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+    font-size: 18px;
+    color: black;
+}
+.checkbox-group {
+    display: flex;
+    align-items: center;
+    text-align: left;
+    margin-bottom: 10px;
+}
+.checkbox-group input {
+    margin-right: 10px;
+}
+small {
+    display: block;
+    font-size: 12px;
+    color: black;
+    margin-top: 5px;
+}
+.buttons {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+}
+.btn {
+    width: 48%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+.btn-primary {
+    background-color: #ff6600;
+    color: white;
+}
+.btn-secondary {
+    background-color: #ff6600;
+    color: white;
+}
