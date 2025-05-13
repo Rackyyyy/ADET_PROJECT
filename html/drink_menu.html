@@ -8,20 +8,31 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
+<header>
+    <div class="logo-container">
+        <a href="homepage.html">
             <img src="../pictures/logo.png" alt="Mustasa Logo">
-            <a href="#">MENU</a>
-        </div>
-        <div class="cart">
+        </a>
+        <a href="chicken_menu.html">MENU</a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
             <img src="../pictures/shopping-cart.png" alt="Cart">
-        </div>
-    </header>
+        </a>
+    </div>
+</header>
+
 
     <div class="tabs">
-        <button class="tab" onclick="showCategory('chicken')">Chicken</button>
-        <button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+<form action="chicken_menu.html">
+        <button class="tab " onclick="showCategory('chicken')">Chicken</button>
+</form>
+<form action="lumpia_menu.html">  
+	<button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+</form>
+<form action="drink_menu.html">  
         <button class="tab active" onclick="showCategory('drinks')">Drinks</button>
+</form>
     </div>
 
     <div class="menu-content">
@@ -41,25 +52,30 @@
                 <h2>Drinks</h2>
                 <hr>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <img src="../pictures/coke.png" alt="fried chicken">
-                        <p>Cocacola Can</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/pepsi.png" alt="chicken neck">
-                        <p>Pepsi Can</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/royal.png" alt="chicken wings">
-                        <p>Royal Can</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/sprite.png" alt="sweet sauce">
-                        <p>Sprite Can</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/water.png" alt="chili garlic oil">
-                        <p>Water Bottle</p>
+    <a class="menu-item" href="cocacola_can.html">
+        <img src="../pictures/coke.png" alt="CocaCola Can">
+        <p>CocaCola Can</p>
+    </a>
+
+    <a class="menu-item" href="pepsi_can.html">
+        <img src="../pictures/pepsi.png" alt="Pepsi Can">
+        <p>Pepsi Can</p>
+    </a>
+
+    <a class="menu-item" href="royal_can.html">
+        <img src="../pictures/royal.png" alt="Royal Can">
+        <p>Royal Can</p>
+    </a>
+
+    <a class="menu-item" href="sprite_can.html">
+        <img src="../pictures/sprite.png" alt="Sprite Can">
+        <p>Sprite Can</p>
+    </a>
+
+    <a class="menu-item" href="water_bottle.html">
+        <img src="../pictures/water.png" alt="Water Bottle">
+        <p>Water Bottle</p>
+    </a>
                     </div>
                 </div>
             </div>

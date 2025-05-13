@@ -8,20 +8,30 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
+<header>
+    <div class="logo-container">
+        <a href="homepage.html">
             <img src="../pictures/logo.png" alt="Mustasa Logo">
-            <a href="#">MENU</a>
-        </div>
-        <div class="cart">
+        </a>
+        <a href="chicken_menu.html">MENU</a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
             <img src="../pictures/shopping-cart.png" alt="Cart">
-        </div>
-    </header>
+        </a>
+    </div>
+</header>
 
     <div class="tabs">
+<form action="chicken_menu.html">
         <button class="tab active" onclick="showCategory('chicken')">Chicken</button>
-        <button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+</form>
+<form action="lumpia_menu.html">  
+	<button class="tab" onclick="showCategory('lumpia')">Lumpia</button>
+</form>
+<form action="drink_menu.html">  
         <button class="tab" onclick="showCategory('drinks')">Drinks</button>
+</form>
     </div>
 
     <div class="menu-content">
@@ -41,26 +51,31 @@
                 <h2>Chicken and Sauce</h2>
                 <hr>
                 <div class="menu-items">
-                    <div class="menu-item">
-                        <img src="../pictures/fried chicken.png" alt="fried chicken">
-                        <p>Fried Chicken</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/chicken neck.png" alt="chicken neck">
-                        <p>Chicken Neck</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/chicken wings.png" alt="chicken wings">
-                        <p>Chicken Wings</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/sweet sauce.png" alt="sweet sauce">
-                        <p>Sweet Sauce</p>
-                    </div>
-                    <div class="menu-item">
-                        <img src="../pictures/chili garlic oil.png" alt="chili garlic oil">
-                        <p>Chili Garlic Oil</p>
-                    </div>
+    <a class="menu-item" href="fried-chicken.html">
+        <img src="../pictures/fried chicken.png" alt="fried chicken">
+        <p>Fried Chicken</p>
+    </a>
+
+    <a class="menu-item" href="chicken-neck.html">
+        <img src="../pictures/chicken neck.png" alt="chicken neck">
+        <p>Chicken Neck</p>
+    </a>
+
+    <a class="menu-item" href="chicken-wings.html">
+        <img src="../pictures/chicken wings.png" alt="chicken wings">
+        <p>Chicken Wings</p>
+    </a>
+
+    <a class="menu-item" href="sweet-sauce.html">
+        <img src="../pictures/sweet sauce.png" alt="sweet sauce">
+        <p>Sweet Sauce</p>
+    </a>
+
+    <a class="menu-item" href="chili-garlic-oil.html">
+        <img src="../pictures/chili garlic oil.png" alt="chili garlic oil">
+        <p>Chili Garlic Oil</p>
+    </a>
+</div>
                 </div>
             </div>
         </div>

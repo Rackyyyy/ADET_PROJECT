@@ -8,20 +8,30 @@
 </head>
 <body>
 
-    <header>
-        <div class="logo-container">
+<header>
+    <div class="logo-container">
+        <a href="homepage.html">
             <img src="../pictures/logo.png" alt="Mustasa Logo">
-            <a href="#">MENU</a>
-        </div>
-        <div class="cart">
-            <img src="../pictures/shopping-cart.png" alt="Shopping Cart">
-        </div>
-    </header>
+        </a>
+        <a href="chicken_menu.html">MENU</a>
+    </div>
+    <div class="cart">
+        <a href="cart.html">
+            <img src="../pictures/shopping-cart.png" alt="Cart">
+        </a>
+    </div>
+</header>
 
     <div class="tabs">
-        <button class="tab" onclick="showCategory('chicken')">Chicken</button>
-        <button class="tab active" onclick="showCategory('lumpia')">Lumpia</button>
+<form action="chicken_menu.html">
+        <button class="tab " onclick="showCategory('chicken')">Chicken</button>
+</form>
+<form action="lumpia_menu.html">  
+	<button class="tab active" onclick="showCategory('lumpia')">Lumpia</button>
+</form>
+<form action="drink_menu.html">  
         <button class="tab" onclick="showCategory('drinks')">Drinks</button>
+</form>
     </div>
 
     <div class="menu-container">
